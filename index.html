@@ -1,74 +1,77 @@
 <!DOCTYPE html>
 <html>
 
-
 <head>
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
-
-    <div>
-        <img src="https://placehold.co/150" />
-        <h1>FirstName LastName</h1>
-        <h3>Web Developer At XYZCompany</h3>
-        <p> <i> {{ Pause and ponder in the silence }} </i> </p>
-    </div>
-
-    <div>
-        <div>
-            <h3>I am</h3>
-            <ul>
-                <li>An engineer</li>
-                <li>A reader</li>
-                <li>A hobby cook</li>
-            </ul>
-        </div>
-        <div>
-            <h3>I like to</h3>
-            <ul>
-                <li>Meet new people</li>
-                <li>Play guitar</li>
-                <li>Eat Icecream</li>
-            </ul>
-        </div>
-    </div>
-    <div>
-        <img src="https://placehold.co/300" alt="Project_1">
-        <img src="https://placehold.co/300" alt="Project_2">
-        <img src="https://placehold.co/300" alt="Project_3">
-        <img src="https://placehold.co/300" alt="Project_4">
-    </div>
-
-    <div>
-        <div>
-            <h3>Links</h3>
-            <ul>
-                <li>
-                    <a href="https://github.com/wondetom860">Github</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/2wondemu">Twitter</a>
-                </li>
-                <li>
-                    <a href="https://linkedin.com/in/wondemutoma4671">Linkedin</a>
-                </li>
-            </ul>
+    <div class="container">
+        <div class="intro">
+            <img src="https://placehold.co/150" />
+            <h1>Wondimu Toma</h1>
+            <h3 class="roleAndCompany">Web Developer At EDU</h3>
+            <p> <i> Programming is NOT typing, It is thinking </i> </p>
         </div>
 
-    </div>
+        <div class="about-grid">
+            <div class="i-am">
+                <h3 class="sectionTitle">I am</h3>
+                <ul class="about-list">
+                    <li>An engineer</li>
+                    <li>A reader</li>
+                    <li>A coder</li>
+                </ul>
+            </div>
+            <div class="i-like">
+                <h3 class="sectionTitle">I like to</h3>
+                <ul class="like-list">
+                    <li>Meet new people</li>
+                    <li>Play guitar</li>
+                    <li>Eat Icecream</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <h3 class="sectionTitle">My Projects</h3>
+            <img src="https://placehold.co/300" alt="Project_1">
+            <img src="https://placehold.co/300" alt="Project_2">
+            <img src="https://placehold.co/300" alt="Project_3">
+            <img src="https://placehold.co/300" alt="Project_4">
+        </div>
 
-    <div>
-        <form action="#">
-            <label for="email">
-                Email: <input type="email" id="email" placeholder="Enter your email" />
-            </label>
-            <label for="message">
-                Message: <textarea id="message">Your Message</textarea>
-            </label>
-            <input type="submit" valid="Send Message" />
+        <div>
+            <div>
+                <h3 class="sectionTitle">Links</h3>
+                <ul>
+                    <li>
+                        <a href="https://github.com/wondetom860">Github</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/2wondemu">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://linkedin.com/in/wondemutoma4671">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
 
-        </form>
+        </div>
+
+        <div>
+            <form action="#">
+                <label for="email">
+                    Email: <input type="email" id="email" placeholder="Enter your email" />
+                </label>
+                <label for="message">
+                    Message: <textarea id="message">Your Message</textarea>
+                </label>
+                <input type="submit" valid="Send Message" />
+
+            </form>
+        </div>
     </div>
 
 </body>

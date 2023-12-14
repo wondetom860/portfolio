@@ -4,18 +4,19 @@
 <head>
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
     <div class="container">
         <div class="intro">
-            <img src="https://placehold.co/150" />
+            <img class="profile-picture" src="images/20230801_223850-1.jpg" />
             <h1>Wondimu Toma</h1>
-            <h3 class="roleAndCompany">Web Developer At EDU</h3>
+            <h3 class="roleAndCompany">Web Developer At ETDU</h3>
             <p> <i> Programming is NOT typing, It is thinking </i> </p>
         </div>
-
+        <hr>
         <div class="about-grid">
             <div class="i-am">
                 <h3 class="sectionTitle">I am</h3>
@@ -35,15 +36,32 @@
             </div>
         </div>
         <div>
-            <h3 class="sectionTitle">My Projects</h3>
-            <img src="https://placehold.co/300" alt="Project_1">
-            <img src="https://placehold.co/300" alt="Project_2">
-            <img src="https://placehold.co/300" alt="Project_3">
-            <img src="https://placehold.co/300" alt="Project_4">
+            <h3 class="projects-heading">My Projects</h3>
+            <div class="projects-grid">
+                <div class="project-image-wrapper">
+                    <h4>Project 1</h4>
+                    <img width="300" height="250" class="project-image" src="images/pr1.jpg" alt="Project_1">
+
+                </div>
+                <div class="project-image-wrapper">
+                    <h4>Project 2</h4>
+                    <img width="300" height="250" class="project-image" src="images/th2.jpg" alt="Project_2">
+
+                </div>
+                <div class="project-image-wrapper">
+                    <h4>Project 3</h4>
+                    <img width="300" height="250" class="project-image" src="images/th3.jpg" alt="Project_3">
+                </div>
+                <div class="project-image-wrapper">
+                    <h4>Project 4</h4>
+                    <img width="300" height="250" class="project-image" src="images/th4.jpg" alt="Project_4">
+
+                </div>
+            </div>
         </div>
 
-        <div>
-            <div>
+        <div class="contact-me-grid">
+            <div class="links-grid">
                 <h3 class="sectionTitle">Links</h3>
                 <ul>
                     <li>
@@ -57,23 +75,28 @@
                     </li>
                 </ul>
             </div>
-
-        </div>
-
-        <div>
-            <form action="#">
-                <label for="email">
-                    Email: <input type="email" id="email" placeholder="Enter your email" />
-                </label>
-                <label for="message">
-                    Message: <textarea id="message">Your Message</textarea>
-                </label>
-                <input type="submit" valid="Send Message" />
-
-            </form>
+            <div class="form-grid">
+                <form action="#">
+                    <label for="email">
+                        <h4>Email: </h4>
+                        <input type="email" required  id="email" placeholder="Enter your email" />
+                    </label>
+                    <label for="message">
+                        <h4>Message: </h4>
+                        <textarea id="message" required placeholder="Your Message"></textarea>
+                    </label>
+                    <div class="submit-button-wrapper">
+                        <input type="submit" valid="Send Message"  />
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-
+<script>
+    window.sendMessage = function(){
+        alert("Submiting comment...");
+    }
+</script>
 </body>
 
 </html>
